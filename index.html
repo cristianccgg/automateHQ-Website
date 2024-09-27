@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Mi Proyecto Tailwind</title>
+  </head>
+  <body>
+    <nav
+      class="w-full flex items-center justify-between h-[112px] px-10 md:ps-[225px] md:pe-[231px]"
+    >
+      <img src="src/images/navbar/Group 1276.png" alt="logo" />
+
+      <div class="flex items-center flex-col md:flex-row">
+        <div
+          id="menu"
+          class="hidden flex flex-col md:flex-row items-center gap-[23px]"
+        >
+          <div class="gradient-border">
+            <button
+              class="w-[149px] h-[40px] relative border-gradient font-bold"
+            >
+              <span
+                class="bg-gradient-to-r text-[20px] from-[#3600D1] to-[#B839FF] bg-clip-text text-transparent"
+                >EVA Pro</span
+              >
+            </button>
+          </div>
+          <div class="gradient-border">
+            <button
+              class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
+            >
+              <span
+                class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                >Investing</span
+              >
+            </button>
+          </div>
+
+          <div class="gradient-border">
+            <button
+              class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
+            >
+              <span
+                class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                >Careers</span
+              >
+            </button>
+          </div>
+
+          <div class="gradient-border">
+            <button
+              class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
+            >
+              <span
+                class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                >Contact</span
+              >
+            </button>
+          </div>
+        </div>
+
+        <img
+          id="hambIcon"
+          src="src/images/navbar/hamb.png"
+          alt="hamb-icon"
+          class="cursor-pointer h-[20px] w-[26px]"
+        />
+        <img
+          id="closeIcon"
+          src="src/images/navbar/x.png"
+          alt="close-icon"
+          class="hidden cursor-pointer ms-[118px]"
+        />
+      </div>
+    </nav>
+
+    <script src="src/javascript/navbar.js"></script>
+  </body>
+</html>

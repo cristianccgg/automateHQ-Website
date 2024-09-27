@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.border-gradient {
+  position: relative;
+  z-index: 0;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.border-gradient::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-76deg, #3600d1 0%, #b839ff 100%);
+  padding: 2px;
+  border-radius: inherit;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.border-gradient-1 {
+  position: relative;
+  z-index: 0;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.border-gradient-1::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    -76deg,
+    #be0800 0%,
+    #dc470d 100%
+  ); /* Actualizado al nuevo gradiente rojo */
+  padding: 2px;
+  border-radius: inherit;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
