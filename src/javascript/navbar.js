@@ -3,27 +3,44 @@ const closeIcon = document.getElementById("closeIcon");
 const menu = document.getElementById("menu");
 const menuDesktop = document.getElementById("menu-desktop");
 
-// Función para verificar si la pantalla es lo suficientemente ancha
-const isDesktop = () => window.innerWidth >= 768; // Ajusta el tamaño según tus necesidades
+const isDesktop = () => window.innerWidth >= 768;
+const isMobileView = () => window.innerWidth <= 1102;
 
 hambIcon.addEventListener("click", () => {
-  menu.classList.toggle("hidden"); // Muestra el menú móvil
+  menu.classList.toggle("hidden");
+
   if (isDesktop()) {
-    // Solo mostrar menú desktop si es una pantalla de escritorio
-    menuDesktop.classList.remove("hidden"); // Asegúrate de que el menú no esté oculto
-    menuDesktop.classList.add("flex"); // Mostrar el menú desktop
+    if (!menuDesktop.classList.contains("hidden")) {
+      menuDesktop.classList.add("hidden");
+    } else {
+      menuDesktop.classList.remove("hidden");
+      menuDesktop.classList.add("flex");
+    }
   }
-  hambIcon.classList.add("hidden"); // Ocultar ícono hamburguesa
-  closeIcon.classList.remove("hidden"); // Mostrar ícono de cerrar
+
+  hambIcon.classList.add("hidden");
+  closeIcon.classList.remove("hidden");
 });
 
 closeIcon.addEventListener("click", () => {
-  menu.classList.add("hidden"); // Oculta el menú móvil
+  menu.classList.add("hidden");
+
   if (isDesktop()) {
-    // Solo ocultar menú desktop si es una pantalla de escritorio
-    menuDesktop.classList.remove("flex"); // Ocultar menú desktop
-    menuDesktop.classList.add("hidden"); // Asegúrate de que el menú esté oculto
+    menuDesktop.classList.add("hidden");
   }
-  hambIcon.classList.remove("hidden"); // Mostrar ícono hamburguesa
-  closeIcon.classList.add("hidden"); // Ocultar ícono de cerrar
+
+  hambIcon.classList.remove("hidden");
+  closeIcon.classList.add("hidden");
+});
+
+// Escucha el evento de redimensionamiento de la ventana
+window.addEventListener("resize", () => {
+  if (isMobileView()) {
+    menuDesktop.classList.add("hidden");
+  } else {
+    // Si está en vista de escritorio y el menú está visible, ocúltalo
+    if (!menuDesktop.classList.contains("hidden")) {
+      menuDesktop.classList.add("hidden");
+    }
+  }
 });

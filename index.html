@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./src/output.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,16 +11,17 @@
       rel="stylesheet"
     />
 
-    <title>Mi Proyecto Tailwind</title>
+    <link href="dist/output.css" rel="stylesheet" />
+
+    <title>Home</title>
   </head>
   <body>
     <nav
-      class="w-full flex items-center justify-between h-[112px] px-10 lg:ps-[225px] lg:pe-[231px]"
+      class="w-full flex items-center justify-between h-[112px] px-5 sm:px-10 lg:ps-[225px] lg:pe-[231px]"
     >
       <img src="src/images/navbar/Group 1276.png" alt="logo" />
 
       <div class="flex items-center flex-col md:flex-row">
-        <!-- Menú para Desktop -->
         <div id="menu-desktop" class="hidden items-center gap-[23px]">
           <div class="gradient-border">
             <button
@@ -74,13 +75,16 @@
           id="closeIcon"
           src="src/images/navbar/x.png"
           alt="close-icon"
-          class="hidden cursor-pointer ms-[118px]"
+          class="hidden cursor-pointer md:ms-[118px]"
         />
       </div>
     </nav>
 
     <!-- Menú Móvil -->
-    <div id="menu" class="flex flex-col items-center md:hidden gap-[23px]">
+    <div
+      id="menu"
+      class="flex flex-col items-center hidden md:hidden gap-[23px]"
+    >
       <div class="gradient-border">
         <button class="w-[149px] h-[40px] relative border-gradient font-bold">
           <span
@@ -120,7 +124,51 @@
         </button>
       </div>
     </div>
+    <section class="pt-[157px] flex items-center justify-center">
+      <div class="hero max-w-[1306px] flex flex-col items-center">
+        <div class="image-container">
+          <img
+            class="hero-image"
+            src="src/images/hero/AHQ-OG 4.png"
+            alt="hero-image"
+          />
+          <img
+            class="hero-image"
+            src="src/images/hero/EDU.png"
+            alt="hero-image"
+          />
+          <img
+            class="hero-image"
+            src="src/images/hero/MFG.png"
+            alt="hero-image"
+          />
+          <img
+            class="hero-image"
+            src="src/images/hero/LOG.png"
+            alt="hero-image"
+          />
+          <img
+            class="hero-image"
+            src="src/images/hero/HC.png"
+            alt="hero-image"
+          />
+          <img
+            class="hero-image"
+            src="src/images/hero/AGRI 3.png"
+            alt="hero-image"
+          />
+        </div>
+        <div
+          class="speech-bubble px-[34px] h-[52px] self-start ms-[16px] mt-[43px]"
+        >
+          <p class="text-[32px] typing-animation">
+            We’re building the future through
+          </p>
+        </div>
+      </div>
+    </section>
 
     <script src="src/javascript/navbar.js"></script>
+    <script src="src/javascript/animations.js"></script>
   </body>
 </html>

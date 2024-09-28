@@ -558,10 +558,6 @@ video {
   visibility: visible;
 }
 
-.collapse {
-  visibility: collapse;
-}
-
 .absolute {
   position: absolute;
 }
@@ -578,20 +574,8 @@ video {
   margin-top: 43px;
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
-}
-
-.table {
-  display: table;
-}
-
-.contents {
-  display: contents;
 }
 
 .hidden {
@@ -634,24 +618,12 @@ video {
   max-width: 1306px;
 }
 
-.border-collapse {
-  border-collapse: collapse;
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.resize {
-  resize: both;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -711,11 +683,6 @@ video {
           background-clip: text;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -748,26 +715,6 @@ video {
 
 .text-transparent {
   color: transparent;
-}
-
-.underline {
-  text-decoration-line: underline;
-}
-
-.outline {
-  outline-style: solid;
-}
-
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 body {
@@ -891,33 +838,14 @@ body {
   }
 }
 
+/* Detener el cursor después de la animación */
+
 .typing-animation.done {
   border-right: none;
+  /* Elimina el cursor */
 }
 
 /* Hero animation */
-
-.image-container {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-  /* Ajusta según sea necesario */
-}
-
-.hero-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  /* Oculta todas las imágenes por defecto */
-  transition: opacity 600ms ease-in-out;
-  /* Transición suave para la opacidad */
-}
-
-.hero-image.active {
-  opacity: 1;
-  /* Solo la imagen activa será visible */
-}
 
 @media (min-width: 640px) {
   .sm\:px-10 {
