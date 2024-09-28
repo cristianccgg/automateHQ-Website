@@ -640,6 +640,10 @@ video {
   height: 112px;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
 .h-\[20px\] {
   height: 20px;
 }
@@ -650,6 +654,14 @@ video {
 
 .h-\[52px\] {
   height: 52px;
+}
+
+.h-\[32px\] {
+  height: 32px;
+}
+
+.h-\[50px\] {
+  height: 50px;
 }
 
 .w-\[148px\] {
@@ -720,8 +732,21 @@ video {
   overflow: hidden;
 }
 
+.rounded-\[35px\] {
+  border-radius: 35px;
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-gradient-to-r {
@@ -756,6 +781,16 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-5 {
@@ -871,47 +906,42 @@ body {
   mask-composite: exclude;
 }
 
+.speech-bubble-container {
+  display: inline-block;
+  max-width: 100%;
+}
+
 .speech-bubble {
   position: relative;
   background: linear-gradient(35deg, #dc470d 0%, #be0800 100%);
   color: white;
   border-radius: 35px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .speech-bubble::after {
   content: "";
   position: absolute;
   top: 40%;
-  /* Asegúrate de que esté justo en la parte inferior de la burbuja */
   left: 5px;
-  /* Ajusta según lo necesites */
   rotate: -30deg;
-  /* Gira la puntica 45 grados */
   border-width: 15px;
-  /* Altura de la puntica */
   border-left-width: 15px;
-  /* Ancho de la base de la puntica */
   border-style: solid;
   border-color: transparent transparent #d9440c transparent;
-  /* Color inferior se fusiona con el fondo */
   transform: translateX(-50%) rotate(0deg);
-  /* Centra y elimina el giro para que esté alineado correctamente */
 }
 
 .typing-animation {
-  width: 0;
+  display: inline-block;
   overflow: hidden;
-  white-space: nowrap;
   border-right: 3px solid white;
-  /* Simula el cursor */
   font-family: monospace;
-  /* Para darle estilo de máquina de escribir */
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 1s steps(40, start), blink-caret 0.75s step-end infinite;
   animation-fill-mode: forwards;
-  /* Mantiene el texto visible al final */
 }
-
-/* Efecto de escritura */
 
 @keyframes typing {
   from {
@@ -920,11 +950,8 @@ body {
 
   to {
     width: 100%;
-    /* Muestra todo el texto */
   }
 }
-
-/* Efecto de parpadeo del cursor mientras se escribe */
 
 @keyframes blink-caret {
   from,

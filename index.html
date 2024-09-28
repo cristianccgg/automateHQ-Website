@@ -124,8 +124,36 @@
         </button>
       </div>
     </div>
-    <section class="pt-[157px] flex items-center justify-center">
+    <section class="pt-[157px] flex flex-col items-center justify-center">
       <div class="hero max-w-[1306px] flex flex-col items-center">
+        <div class="text-[32px] self-start">
+          <h1 class="h-[50px]"></h1>
+          <h1
+            class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
+          >
+            Education
+          </h1>
+          <h1
+            class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
+          >
+            Manufacturing
+          </h1>
+          <h1
+            class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
+          >
+            Logistics
+          </h1>
+          <h1
+            class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
+          >
+            Healthcare
+          </h1>
+          <h1
+            class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
+          >
+            Agriculture
+          </h1>
+        </div>
         <div class="image-container">
           <img
             class="hero-image first-image"
@@ -158,18 +186,21 @@
             alt="hero-image"
           />
         </div>
-        <div
-          class="speech-bubble px-[34px] h-[52px] self-start ms-[16px] mt-[43px]"
-        >
-          <p class="text-[32px] typing-animation">
-            We’re building the future through
-          </p>
+        <div class="speech-bubble-container">
+          <div
+            class="speech-bubble px-[34px] h-[52px] self-start ms-[16px] mt-[43px]"
+          >
+            <p class="text-[32px] typing-animation">
+              We're building the future through
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <script src="src/javascript/navbar.js"></script>
-    <script src="src/javascript/animations.js"></script>
+    <script src="src/javascript/bubbleAnimations.js"></script>
     <script src="src/javascript/hero.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </body>
 </html>

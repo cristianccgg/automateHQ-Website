@@ -56,47 +56,52 @@ body {
   mask-composite: exclude;
 }
 
+.speech-bubble-container {
+  display: inline-block;
+  max-width: 100%;
+}
+
 .speech-bubble {
   position: relative;
   background: linear-gradient(35deg, #dc470d 0%, #be0800 100%);
   color: white;
   border-radius: 35px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .speech-bubble::after {
   content: "";
   position: absolute;
-  top: 40%; /* Asegúrate de que esté justo en la parte inferior de la burbuja */
-  left: 5px; /* Ajusta según lo necesites */
-  rotate: -30deg; /* Gira la puntica 45 grados */
-  border-width: 15px; /* Altura de la puntica */
-  border-left-width: 15px; /* Ancho de la base de la puntica */
+  top: 40%;
+  left: 5px;
+  rotate: -30deg;
+  border-width: 15px;
+  border-left-width: 15px;
   border-style: solid;
-  border-color: transparent transparent #d9440c transparent; /* Color inferior se fusiona con el fondo */
-  transform: translateX(-50%) rotate(0deg); /* Centra y elimina el giro para que esté alineado correctamente */
+  border-color: transparent transparent #d9440c transparent;
+  transform: translateX(-50%) rotate(0deg);
 }
 
 .typing-animation {
-  width: 0;
+  display: inline-block;
   overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid white; /* Simula el cursor */
-  font-family: monospace; /* Para darle estilo de máquina de escribir */
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-  animation-fill-mode: forwards; /* Mantiene el texto visible al final */
+  border-right: 3px solid white;
+  font-family: monospace;
+  animation: typing 1s steps(40, start), blink-caret 0.75s step-end infinite;
+  animation-fill-mode: forwards;
 }
 
-/* Efecto de escritura */
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 100%; /* Muestra todo el texto */
+    width: 100%;
   }
 }
 
-/* Efecto de parpadeo del cursor mientras se escribe */
 @keyframes blink-caret {
   from,
   to {

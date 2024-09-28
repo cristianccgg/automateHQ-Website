@@ -1,35 +1,49 @@
 const images = document.querySelectorAll(".hero-image");
+const headings = document.querySelectorAll("h1");
 let currentIndex = 0;
 
-// Función para mostrar la siguiente imagen
 function showNextImage() {
   const currentImage = images[currentIndex];
+  const currentHeading = headings[currentIndex];
 
-  // Remover la clase active de la imagen actual
   currentImage.classList.remove("active");
-  currentImage.classList.add("prev"); // Marcar la imagen actual como anterior
+  currentImage.classList.add("prev");
+  currentHeading.style.display = "none";
 
-  // Calcular el siguiente índice
-  const nextIndex = (currentIndex + 1) % images.length;
+  // Calculate the next index, wrapping around to 1 (not 0) when reaching the end
+  const nextIndex = currentIndex === images.length - 1 ? 1 : currentIndex + 1;
   const nextImage = images[nextIndex];
+  const nextHeading = headings[nextIndex];
 
-  // Agregar la clase active a la imagen siguiente
   nextImage.classList.add("active");
+  nextHeading.style.display = "block";
 
-  // Ocultar la primera imagen después de la primera animación
+  // Hide the first image after it transitions out
   if (currentIndex === 0) {
     setTimeout(() => {
-      currentImage.style.display = "none"; // Oculta la primera imagen
-    }, 600); // Debe coincidir con la duración de la transición
+      currentImage.style.display = "none";
+    }, 600);
   }
 
-  // Esperar el tiempo de la transición para cambiar la posición
   setTimeout(() => {
-    currentImage.classList.remove("prev"); // Remover la clase de la imagen anterior
-  }, 600); // Debe coincidir con la duración de la transición
+    currentImage.classList.remove("prev");
+  }, 600);
 
-  currentIndex = nextIndex; // Actualizar el índice actual
+  currentIndex = nextIndex;
 }
 
-// Cambia de imagen cada 3 segundos
-setInterval(showNextImage, 3000);
+// Initialize by showing only the first image and heading
+images[0].classList.add("active");
+headings[0].style.display = "block";
+
+for (let i = 1; i < images.length; i++) {
+  images[i].classList.remove("active");
+  headings[i].style.display = "none";
+}
+
+// Start the animation after 3500ms for the first image
+setTimeout(() => {
+  showNextImage();
+  // Then continue with 1500ms intervals for subsequent images
+  setInterval(showNextImage, 1500);
+}, 3500);
