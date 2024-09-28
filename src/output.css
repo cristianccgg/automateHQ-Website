@@ -946,8 +946,7 @@ body {
   opacity: 1;
   top: 0;
   /* La primera imagen está en su lugar */
-  transition: none;
-  /* Sin transición para la primera imagen */
+  transition: top 600ms ease-in-out;
 }
 
 @media (min-width: 640px) {
