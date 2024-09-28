@@ -1,27 +1,35 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".hero-image:not(.first-image)"); // Selecciona solo las imágenes que no son la primera
-  let currentIndex = 0;
+const images = document.querySelectorAll(".hero-image");
+let currentIndex = 0;
 
-  function showNextImage() {
-    // Ocultar la imagen actual
-    images[currentIndex].classList.remove("active");
+// Función para mostrar la siguiente imagen
+function showNextImage() {
+  const currentImage = images[currentIndex];
 
-    // Incrementar el índice
-    currentIndex++;
+  // Remover la clase active de la imagen actual
+  currentImage.classList.remove("active");
+  currentImage.classList.add("prev"); // Marcar la imagen actual como anterior
 
-    // Si el índice excede el número de imágenes, reiniciar y mostrar la primera imagen
-    if (currentIndex >= images.length) {
-      currentIndex = 0; // Reiniciar desde la primera imagen
-    }
+  // Calcular el siguiente índice
+  const nextIndex = (currentIndex + 1) % images.length;
+  const nextImage = images[nextIndex];
 
-    // Mostrar la nueva imagen
-    images[currentIndex].classList.add("active");
+  // Agregar la clase active a la imagen siguiente
+  nextImage.classList.add("active");
+
+  // Ocultar la primera imagen después de la primera animación
+  if (currentIndex === 0) {
+    setTimeout(() => {
+      currentImage.style.display = "none"; // Oculta la primera imagen
+    }, 600); // Debe coincidir con la duración de la transición
   }
 
-  // Iniciar la animación después de 3500 ms
+  // Esperar el tiempo de la transición para cambiar la posición
   setTimeout(() => {
-    // Mostrar la primera imagen (que ya está visible)
-    images[0].classList.add("active"); // Asegúrate de que la primera imagen no se oculte
-    setInterval(showNextImage, 1500); // Cambiar la imagen cada 1500 ms
-  }, 3500);
-});
+    currentImage.classList.remove("prev"); // Remover la clase de la imagen anterior
+  }, 600); // Debe coincidir con la duración de la transición
+
+  currentIndex = nextIndex; // Actualizar el índice actual
+}
+
+// Cambia de imagen cada 3 segundos
+setInterval(showNextImage, 3000);

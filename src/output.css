@@ -558,6 +558,10 @@ video {
   visibility: visible;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .collapse {
   visibility: collapse;
 }
@@ -678,6 +682,10 @@ video {
   align-self: flex-start;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .border {
   border-width: 1px;
 }
@@ -768,6 +776,10 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -900,36 +912,42 @@ body {
 .image-container {
   position: relative;
   overflow: hidden;
-  height: 400px;
-  /* Ajusta según sea necesario */
-  width: 600px;
-  /* Ajusta según sea necesario */
+  height: 171px;
+  width: 100%;
+  max-width: 1301px;
 }
 
 .hero-image {
   position: absolute;
-  top: 0;
+  top: 100%;
+  /* Comienza fuera del contenedor, por debajo */
   left: 0;
   opacity: 0;
-  /* Oculta todas las imágenes por defecto */
-  transition: opacity 600ms ease-in-out;
-  /* Transición suave para la opacidad */
+  transition: top 600ms ease-in-out;
+  /* Transición de opacidad y posición */
   width: 100%;
-  /* Asegúrate de que la imagen ocupe todo el contenedor */
   height: 100%;
-  /* Asegúrate de que la imagen ocupe todo el contenedor */
 }
 
 .hero-image.active {
   opacity: 1;
-  /* Solo la imagen activa será visible */
+  top: 0;
+  /* La imagen activa sube a su posición */
+}
+
+.hero-image.prev {
+  opacity: 1;
+  /* Mantener visible la imagen anterior */
+  top: -100%;
+  /* La imagen anterior sube fuera del contenedor */
 }
 
 .first-image {
   opacity: 1;
-  /* La primera imagen está visible desde el inicio */
+  top: 0;
+  /* La primera imagen está en su lugar */
   transition: none;
-  /* Sin transición para que aparezca inmediatamente */
+  /* Sin transición para la primera imagen */
 }
 
 @media (min-width: 640px) {
