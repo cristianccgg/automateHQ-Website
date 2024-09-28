@@ -116,7 +116,8 @@ body {
 .image-container {
   position: relative;
   overflow: hidden;
-  height: 100%; /* Ajusta según sea necesario */
+  height: 400px; /* Ajusta según sea necesario */
+  width: 600px; /* Ajusta según sea necesario */
 }
 
 .hero-image {
@@ -125,8 +126,15 @@ body {
   left: 0;
   opacity: 0; /* Oculta todas las imágenes por defecto */
   transition: opacity 600ms ease-in-out; /* Transición suave para la opacidad */
+  width: 100%; /* Asegúrate de que la imagen ocupe todo el contenedor */
+  height: 100%; /* Asegúrate de que la imagen ocupe todo el contenedor */
 }
 
 .hero-image.active {
   opacity: 1; /* Solo la imagen activa será visible */
+}
+
+.first-image {
+  opacity: 1; /* La primera imagen está visible desde el inicio */
+  transition: none; /* Sin transición para que aparezca inmediatamente */
 }
