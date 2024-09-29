@@ -13,194 +13,501 @@
 
     <link href="src/output.css" rel="stylesheet" />
 
-    <title>Home</title>
+    <title>automateHQ</title>
   </head>
-  <body>
-    <nav
-      class="w-full flex items-center justify-between h-[112px] px-5 sm:px-10 lg:ps-[225px] lg:pe-[231px]"
-    >
-      <img src="src/images/navbar/Group 1276.png" alt="logo" />
-
-      <div class="flex items-center flex-col md:flex-row">
-        <div id="menu-desktop" class="hidden items-center gap-[23px]">
-          <div class="gradient-border">
-            <button
-              class="w-[149px] h-[40px] relative border-gradient font-bold"
-            >
-              <span
-                class="bg-gradient-to-r text-[20px] from-[#3600D1] to-[#B839FF] bg-clip-text text-transparent"
-                >EVA Pro</span
+  <body class="flex flex-col items-center">
+    <main>
+      <nav
+        class="w-full flex items-center justify-between h-[112px] px-5 sm:px-10 lg:ps-[225px] lg:pe-[231px]"
+      >
+        <img src="src/images/navbar/Group 1276.png" alt="logo" />
+        <div class="flex items-center flex-col md:flex-row">
+          <div id="menu-desktop" class="hidden items-center gap-[23px]">
+            <div class="gradient-border">
+              <button
+                class="w-[149px] h-[40px] relative border-gradient font-bold"
               >
-            </button>
-          </div>
-          <div class="gradient-border">
-            <button
-              class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
-            >
-              <span
-                class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-                >Investing</span
+                <span
+                  class="bg-gradient-to-r text-[20px] from-[#B839FF] to-[#3600D1] bg-clip-text text-transparent"
+                  >EVA Pro</span
+                >
+              </button>
+            </div>
+            <div class="gradient-border">
+              <button
+                class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
               >
-            </button>
-          </div>
-          <div class="gradient-border">
-            <button
-              class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
-            >
-              <span
-                class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-                >Careers</span
+                <span
+                  class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                  >Investing</span
+                >
+              </button>
+            </div>
+            <div class="gradient-border">
+              <button
+                class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
               >
-            </button>
-          </div>
-          <div class="gradient-border">
-            <button
-              class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
-            >
-              <span
-                class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-                >Contact</span
+                <span
+                  class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                  >Careers</span
+                >
+              </button>
+            </div>
+            <div class="gradient-border">
+              <button
+                class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
               >
-            </button>
+                <span
+                  class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                  >Contact</span
+                >
+              </button>
+            </div>
           </div>
-        </div>
-
-        <img
-          id="hambIcon"
-          src="src/images/navbar/hamb.png"
-          alt="hamb-icon"
-          class="cursor-pointer h-[20px] w-[26px]"
-        />
-        <img
-          id="closeIcon"
-          src="src/images/navbar/x.png"
-          alt="close-icon"
-          class="hidden cursor-pointer md:ms-[118px]"
-        />
-      </div>
-    </nav>
-
-    <!-- Menú Móvil -->
-    <div
-      id="menu"
-      class="flex flex-col items-center hidden md:hidden gap-[23px]"
-    >
-      <div class="gradient-border">
-        <button class="w-[149px] h-[40px] relative border-gradient font-bold">
-          <span
-            class="bg-gradient-to-r text-[20px] from-[#3600D1] to-[#B839FF] bg-clip-text text-transparent"
-            >EVA Pro</span
-          >
-        </button>
-      </div>
-      <div class="gradient-border">
-        <button
-          class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
-        >
-          <span
-            class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-            >Investing</span
-          >
-        </button>
-      </div>
-      <div class="gradient-border">
-        <button
-          class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
-        >
-          <span
-            class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-            >Careers</span
-          >
-        </button>
-      </div>
-      <div class="gradient-border">
-        <button
-          class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
-        >
-          <span
-            class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-            >Contact</span
-          >
-        </button>
-      </div>
-    </div>
-    <section class="pt-[157px] flex flex-col items-center justify-center">
-      <div class="hero max-w-[1306px] flex flex-col items-center">
-        <div class="text-[32px] self-start">
-          <h1 class="h-[50px]"></h1>
-          <h1
-            class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
-          >
-            Education
-          </h1>
-          <h1
-            class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
-          >
-            Manufacturing
-          </h1>
-          <h1
-            class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
-          >
-            Logistics
-          </h1>
-          <h1
-            class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
-          >
-            Healthcare
-          </h1>
-          <h1
-            class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
-          >
-            Agriculture
-          </h1>
-        </div>
-        <div class="image-container">
           <img
-            class="hero-image first-image"
-            src="src/images/hero/AHQ-OG 4.png"
-            alt="hero-image"
+            id="hambIcon"
+            src="src/images/navbar/hamb.png"
+            alt="hamb-icon"
+            class="cursor-pointer h-[20px] w-[26px]"
           />
           <img
-            class="hero-image"
-            src="src/images/hero/EDU.png"
-            alt="hero-image"
-          />
-          <img
-            class="hero-image"
-            src="src/images/hero/MFG.png"
-            alt="hero-image"
-          />
-          <img
-            class="hero-image"
-            src="src/images/hero/LOG.png"
-            alt="hero-image"
-          />
-          <img
-            class="hero-image"
-            src="src/images/hero/HC.png"
-            alt="hero-image"
-          />
-          <img
-            class="hero-image"
-            src="src/images/hero/AGRI 3.png"
-            alt="hero-image"
+            id="closeIcon"
+            src="src/images/navbar/x.png"
+            alt="close-icon"
+            class="hidden cursor-pointer md:ms-[118px]"
           />
         </div>
-        <div class="speech-bubble-container">
+      </nav>
+      <!-- Menú Móvil -->
+      <div
+        id="menu"
+        class="flex flex-col items-center hidden md:hidden gap-[23px]"
+      >
+        <div class="gradient-border">
+          <button class="w-[149px] h-[40px] relative border-gradient font-bold">
+            <span
+              class="bg-gradient-to-r text-[20px] from-[#B839FF] to-[#3600D1] bg-clip-text text-transparent"
+              >EVA Pro</span
+            >
+          </button>
+        </div>
+        <div class="gradient-border">
+          <button
+            class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
+          >
+            <span
+              class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+              >Investing</span
+            >
+          </button>
+        </div>
+        <div class="gradient-border">
+          <button
+            class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
+          >
+            <span
+              class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+              >Careers</span
+            >
+          </button>
+        </div>
+        <div class="gradient-border">
+          <button
+            class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
+          >
+            <span
+              class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+              >Contact</span
+            >
+          </button>
+        </div>
+      </div>
+      <section
+        class="md:pt-[227px] pt-52 px-5 lg:px-0 w-full flex flex-col items-center"
+      >
+        <div class="hero max-w-[1182px] w-full flex flex-col items-center">
+          <div class="text-[32px] self-start">
+            <h1 class="h-[52px]"></h1>
+            <h1
+              class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
+            >
+              Education
+            </h1>
+            <h1
+              class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
+            >
+              Manufacturing
+            </h1>
+            <h1
+              class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
+            >
+              Logistics
+            </h1>
+            <h1
+              class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
+            >
+              Healthcare
+            </h1>
+            <h1
+              class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
+            >
+              Agriculture
+            </h1>
+          </div>
+          <div class="image-container">
+            <img
+              class="hero-image first-image"
+              src="src/images/hero/AHQ-OG 4.png"
+              alt="hero-image"
+            />
+            <img
+              class="hero-image"
+              src="src/images/hero/EDU.png"
+              alt="hero-image"
+            />
+            <img
+              class="hero-image"
+              src="src/images/hero/MFG.png"
+              alt="hero-image"
+            />
+            <img
+              class="hero-image"
+              src="src/images/hero/LOG.png"
+              alt="hero-image"
+            />
+            <img
+              class="hero-image"
+              src="src/images/hero/HC.png"
+              alt="hero-image"
+            />
+            <img
+              class="hero-image"
+              src="src/images/hero/AGRI 3.png"
+              alt="hero-image"
+            />
+          </div>
+          <div class="speech-bubble-container self-start">
+            <div class="speech-bubble px-[34px] h-[52px] ms-[16px] mt-[43px]">
+              <p class="text-[18px] md:text-[32px] typing-animation">
+                We're building the future through
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-[275px] mb-[159px]">
+          <img src="src/images/hero/Arrow.png" alt="arrow" />
+        </div>
+      </section>
+      <section class="max-h-[1306px]">
+        <img src="src/images/pole/Urban-Wall-Poster 1.png" alt="pole-img" />
+      </section>
+      <section
+        class="w-full px-5 md:px-[100px] md:py-[100px] xl:px-[229px] xl:pb-[207px] xl:pt-[206px] pt-20 pb-20"
+      >
+        <div class="max-w-[1462px] element">
+          <h1 class="text-[48px] font-medium">Our Mission</h1>
           <div
-            class="speech-bubble px-[34px] h-[52px] self-start ms-[16px] mt-[43px]"
+            class="mt-[59px] w-full font-medium flex flex-col lg:flex-row gap-[80px]"
           >
-            <p class="text-[32px] typing-animation">
-              We're building the future through
+            <h1 class="text-[48px] max-w-[667px] w-full xl:text-nowrap">
+              Innovating today for a smarter <br />
+              tomorrow.
+            </h1>
+            <p class="text-[32px] w-full leading-[150%]">
+              Our team at automateHQ is leveraging AI/ML technology
+              <span class="text-[#DC470D]"> to revolutionize industries </span>
+              in need of transformation. Our solutions address today’s biggest
+              challenges, empowering people to work smarter and maximize
+              sustainable efficiency.
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section>
+        <div class="eva-pro max-h-[1309px]">
+          <img src="src/images/Eva pro/EP-AHQ 1.png" alt="evaPro-img" />
+        </div>
+      </section>
+      <section
+        class="px-5 py-20 lg:px-14 2xl:pt-[192px] 2xl:pr-[240px] 2xl:pb-[226px] 2xl:ps-[197px]"
+      >
+        <div
+          class="flex flex-col lg:flex-row xl:gap-[188px] md:gap-20 lg:h-[477px]"
+        >
+          <div class="education">
+            <div class="flex h-[58px] items-center gap-8">
+              <h1 class="text-[48px] font-medium tracking-[-2%] text-nowrap">
+                EVA Pro
+              </h1>
+              <h2
+                class="bg-purple-custom text-white text-[32px] h-[52px] font-medium rounded-full w-[224px] text-center"
+              >
+                Education
+              </h2>
+            </div>
+            <h1
+              class="text-[48px] font-medium tracking-[-2%] mt-[59px] lg:max-w-[559px]"
+            >
+              Our flagship solution to solving B2B education challenges, today.
+            </h1>
+          </div>
+          <div class="education-p flex flex-col justify-end md:max-w-[715px]">
+            <p class="text-[32px] mt-[59px] tracking-[150%]">
+              EVA Pro is a revolutionary enterprise solution that brings
+              incredible speed and power to businesses, allowing them to onboard
+              and train employees with AI-generated materials tailored
+              specifically to their company.
+            </p>
+            <div class="gradient-border mt-[68px] self-end">
+              <h2
+                class="relative border-gradient h-[52px] w-[341px] font-medium text-center"
+              >
+                <span
+                  class="bg-gradient-to-r text-[32px] from-[#B839FF] to-[#3600D1] bg-clip-text text-transparent"
+                  >I want to learn more</span
+                >
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <img
+          class="max-h-[1311px]"
+          src="src/images/Pioneer/ID-Card-Mockup-01 6.png"
+          alt="pioneer-img"
+        />
+      </section>
+      <section
+        class="px-5 py-20 lg:px-14 2xl:pt-[206px] 2xl:pr-[229px] 2xl:pb-[214px] 2xl:ps-[171px]"
+      >
+        <div
+          class="flex flex-col lg:flex-row xl:gap-[60px] md:gap-20 lg:h-[531px]"
+        >
+          <div>
+            <div class="flex gap-[32px] items-center">
+              <img
+                class="w-[26px] h-[26px]"
+                src="src/images/Pioneer/Ellipse 213.png"
+                alt="Ellipse-img"
+              />
+              <div class="flex h-[58px] items-center gap-8">
+                <h1 class="text-[48px] font-medium tracking-[-2%] text-nowrap">
+                  Calling all Pioneers
+                </h1>
+              </div>
+            </div>
+            <h1
+              class="text-[48px] ms-[58px] leading-tight font-medium tracking-[-2%] mt-[59px] xl:w-[687px]"
+            >
+              To solve problems for humans, it takes great humans.
+            </h1>
+          </div>
+          <div class="flex flex-col justify-end md:max-w-[715px]">
+            <p class="text-[32px] mt-[59px] tracking-[150%]">
+              Building a <span class="text-[#DC470D]">greater future</span> is
+              impossible without the right people on our team. If you’re a
+              fanatic about providing real value to the end-user, we’re
+              interested in meeting you. <br />
+              <br /><span class="italic"
+                >Together, we can change the world.</span
+              >
+            </p>
+            <div class="mt-[68px] self-end flex gap-[13px]">
+              <div class="gradient-border">
+                <button
+                  class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
+                >
+                  <span
+                    class="bg-gradient-to-r text-center flex justify-center items-center text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                    >Investing</span
+                  >
+                </button>
+              </div>
+              <div class="gradient-border">
+                <button
+                  class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
+                >
+                  <span
+                    class="bg-gradient-to-r text-center flex justify-center items-center text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                    >Careers</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="px-5 py-20 lg:px-14 2xl:pt-[134px] 2xl:pr-[229px] 2xl:pb-[214px] 2xl:ps-[229px]"
+      >
+        <div class="relative">
+          <img
+            class="absolute -left-[24px] top-1/2 -translate-y-1/2"
+            src="src/images/form/Vector 135.png"
+            alt="back-arrow"
+          />
+          <h3 class="mb-[42px] underline underline-offset-8 text-[20px]">
+            Go back
+          </h3>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row xl:gap-[60px] md:gap-20 lg:h-[531px]"
+        >
+          <div class="mb-20 lg:mb-0">
+            <div>
+              <div class="flex h-[58px] items-center gap-8">
+                <h1 class="text-[48px] font-medium tracking-[-2%] text-nowrap">
+                  Let's get in touch
+                </h1>
+              </div>
+            </div>
+            <h1
+              class="text-[48px] font-medium leading-tight tracking-[-2%] mt-[59px] xl:w-[687px]"
+            >
+              We’re always open to connect with the right strategic partners.
+            </h1>
+            <div class="flex gap-[13px] mt-[61px]">
+              <button
+                class="w-[191px] h-[52px] bg-custom-gradient text-white rounded-full text-[32px]"
+              >
+                Investing
+              </button>
+
+              <div class="gradient-border">
+                <button
+                  class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
+                >
+                  <span
+                    class="bg-gradient-to-r text-center flex justify-center items-center text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                    >Careers</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <form class="w-full flex flex-col" action="#">
+            <div class="flex flex-col gap-[17px]">
+              <input
+                class="h-[55px] border-2 rounded-lg border-black w-full ps-[12px]"
+                type="text"
+                placeholder="Name"
+              />
+              <div class="flex gap-[27px]">
+                <input
+                  class="h-[55px] border-2 rounded-lg border-black w-full ps-[12px]"
+                  type="email"
+                  placeholder="Email address"
+                />
+                <input
+                  class="h-[55px] border-2 rounded-lg border-black w-full ps-[12px]"
+                  type="number"
+                  placeholder="Phone number"
+                />
+              </div>
+            </div>
+            <textarea
+              class="mt-[51px] h-[249px] border-2 rounded-lg border-black w-full ps-[12px] pt-[16px]"
+              placeholder="Type a message"
+            ></textarea>
+            <button
+              class="mt-[52px] self-end bg-custom-gradient w-[143px] h-[52px] text-white rounded-full text-[32px]"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+      <section
+        class="px-5 py-20 lg:px-14 2xl:pt-[134px] 2xl:pr-[229px] 2xl:pb-[214px] 2xl:ps-[229px]"
+      >
+        <div class="relative">
+          <img
+            class="absolute -left-[24px] top-1/2 -translate-y-1/2"
+            src="src/images/form/Vector 135.png"
+            alt="back-arrow"
+          />
+          <h3 class="mb-[42px] underline underline-offset-8 text-[20px]">
+            Go back
+          </h3>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row xl:gap-[60px] md:gap-20 lg:h-[531px]"
+        >
+          <div class="mb-20 lg:mb-0">
+            <div>
+              <div class="flex h-[58px] items-center gap-8">
+                <h1 class="text-[48px] font-medium tracking-[-2%] text-nowrap">
+                  Let's get in touch
+                </h1>
+              </div>
+            </div>
+            <h1
+              class="text-[48px] font-medium leading-tight tracking-[-2%] mt-[59px] xl:w-[687px]"
+            >
+              We’re always looking for <br />
+              the next Pioneer to <br />
+              join our team.
+            </h1>
+            <div class="flex gap-[13px] mt-[61px]">
+              <div class="gradient-border">
+                <button
+                  class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
+                >
+                  <span
+                    class="bg-gradient-to-r text-center flex justify-center items-center text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                    >Investing</span
+                  >
+                </button>
+              </div>
+              <button
+                class="w-[191px] h-[52px] bg-custom-gradient text-white rounded-full text-[32px]"
+              >
+                Careers
+              </button>
+            </div>
+          </div>
+          <form class="w-full flex flex-col" action="#">
+            <div class="flex flex-col gap-[17px]">
+              <input
+                class="h-[55px] border-2 rounded-lg border-black w-full ps-[12px]"
+                type="text"
+                placeholder="Name"
+              />
+              <div class="flex gap-[27px]">
+                <input
+                  class="h-[55px] border-2 rounded-lg border-black w-full ps-[12px]"
+                  type="email"
+                  placeholder="Email address"
+                />
+                <input
+                  class="h-[55px] border-2 rounded-lg border-black w-full ps-[12px]"
+                  type="number"
+                  placeholder="Phone number"
+                />
+              </div>
+            </div>
+            <textarea
+              class="mt-[51px] h-[249px] border-2 rounded-lg border-black w-full ps-[12px] pt-[16px]"
+              placeholder="Type a message"
+            ></textarea>
+            <button
+              class="mt-[52px] self-end bg-custom-gradient w-[143px] h-[52px] text-white rounded-full text-[32px]"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <script src="src/javascript/navbar.js"></script>
     <script src="src/javascript/bubbleAnimations.js"></script>
     <script src="src/javascript/hero.js"></script>
+    <script src="src/javascript/scrollAnimations.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </body>
 </html>

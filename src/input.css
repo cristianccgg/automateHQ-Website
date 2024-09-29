@@ -21,7 +21,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(-76deg, #3600d1 0%, #b839ff 100%);
+  background: linear-gradient(-76deg, #b839ff 0%, #3600d1 100%);
   padding: 2px;
   border-radius: inherit;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -66,7 +66,8 @@ body {
   background: linear-gradient(35deg, #dc470d 0%, #be0800 100%);
   color: white;
   border-radius: 35px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -150,4 +151,8 @@ body {
   opacity: 1;
   top: 0;
   transition: top 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.element {
+  opacity: 0; /* Comienza oculto */
 }
