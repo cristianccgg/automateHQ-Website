@@ -18,49 +18,57 @@
   <body class="flex flex-col items-center">
     <main>
       <nav
-        class="w-full flex items-center justify-between h-[112px] px-5 sm:px-10 lg:ps-[225px] lg:pe-[231px]"
+        class="w-full bg-white z-20 fixed flex items-center justify-between h-[112px]"
       >
         <img src="src/images/navbar/Group 1276.png" alt="logo" />
         <div class="flex items-center flex-col md:flex-row">
           <div id="menu-desktop" class="hidden items-center gap-[23px]">
             <div class="gradient-border">
               <button
-                class="w-[149px] h-[40px] relative border-gradient font-bold"
+                class="w-[149px] h-[40px] relative border-gradient font-medium"
               >
-                <span
-                  class="bg-gradient-to-r text-[20px] from-[#B839FF] to-[#3600D1] bg-clip-text text-transparent"
-                  >EVA Pro</span
-                >
+                <a href="#eva-pro-hero">
+                  <span
+                    class="bg-gradient-to-r text-[20px] from-[#B839FF] to-[#3600D1] bg-clip-text text-transparent"
+                    >EVA Pro</span
+                  >
+                </a>
               </button>
             </div>
             <div class="gradient-border">
               <button
-                class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
+                class="investing-navbar-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
               >
-                <span
-                  class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-                  >Investing</span
-                >
+                <a href="#investing-section">
+                  <span
+                    class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                    >Investing</span
+                  >
+                </a>
               </button>
             </div>
             <div class="gradient-border">
               <button
-                class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
+                class="careers-navbar-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
               >
-                <span
-                  class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-                  >Careers</span
-                >
+                <a href="#careers-section">
+                  <span
+                    class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                    >Careers</span
+                  >
+                </a>
               </button>
             </div>
             <div class="gradient-border">
               <button
-                class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
+                class="contact-navbar-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
               >
-                <span
-                  class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-                  >Contact</span
-                >
+                <a href="#careers-section">
+                  <span
+                    class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                    >Contact</span
+                  >
+                </a>
               </button>
             </div>
           </div>
@@ -77,52 +85,64 @@
             class="hidden cursor-pointer md:ms-[118px]"
           />
         </div>
+
+        <!-- Menú Móvil -->
+        <div
+          id="menu"
+          class="hidden md:hidden pb-10 flex flex-col justify-center items-center gap-[23px] absolute top-[112px] w-full bg-white z-30"
+        >
+          <div class="gradient-border">
+            <button
+              class="w-[149px] h-[40px] relative border-gradient font-bold"
+            >
+              <a href="#eva-pro-hero">
+                <span
+                  class="bg-gradient-to-r text-[20px] from-[#B839FF] to-[#3600D1] bg-clip-text text-transparent"
+                  >EVA Pro</span
+                >
+              </a>
+            </button>
+          </div>
+          <div class="gradient-border">
+            <button
+              class="investing-navbar-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
+            >
+              <a href="#investing-section">
+                <span
+                  class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                  >Investing</span
+                >
+              </a>
+            </button>
+          </div>
+          <div class="gradient-border">
+            <button
+              class="careers-navbar-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
+            >
+              <a href="#careers-section">
+                <span
+                  class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                  >Careers</span
+                >
+              </a>
+            </button>
+          </div>
+          <div class="gradient-border">
+            <button
+              class="contact-navbat-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
+            >
+              <a href="#careers-section">
+                <span
+                  class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                  >Contact</span
+                >
+              </a>
+            </button>
+          </div>
+        </div>
       </nav>
-      <!-- Menú Móvil -->
-      <div
-        id="menu"
-        class="flex flex-col items-center hidden md:hidden gap-[23px]"
-      >
-        <div class="gradient-border">
-          <button class="w-[149px] h-[40px] relative border-gradient font-bold">
-            <span
-              class="bg-gradient-to-r text-[20px] from-[#B839FF] to-[#3600D1] bg-clip-text text-transparent"
-              >EVA Pro</span
-            >
-          </button>
-        </div>
-        <div class="gradient-border">
-          <button
-            class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
-          >
-            <span
-              class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-              >Investing</span
-            >
-          </button>
-        </div>
-        <div class="gradient-border">
-          <button
-            class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
-          >
-            <span
-              class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-              >Careers</span
-            >
-          </button>
-        </div>
-        <div class="gradient-border">
-          <button
-            class="w-[148px] h-[40px] relative border-gradient-1 font-medium"
-          >
-            <span
-              class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-              >Contact</span
-            >
-          </button>
-        </div>
-      </div>
       <section
+        id="home-section"
         class="md:pt-[227px] pt-52 px-5 lg:px-0 w-full flex flex-col items-center"
       >
         <div class="hero max-w-[1182px] w-full flex flex-col items-center">
@@ -223,7 +243,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="eva-pro-hero">
         <div class="eva-pro max-h-[1309px]">
           <img src="src/images/Eva pro/EP-AHQ 1.png" alt="evaPro-img" />
         </div>
@@ -279,17 +299,19 @@
         />
       </section>
       <section
-        class="px-5 py-20 lg:px-14 2xl:pt-[206px] 2xl:pr-[229px] 2xl:pb-[214px] 2xl:ps-[171px]"
+        id="pioneers-section"
+        class="px-5 py-20 lg:px-14 2xl:pt-[206px] bg-grey-custom 2xl:pr-[229px] 2xl:pb-[214px] 2xl:ps-[171px]"
       >
         <div
           class="flex flex-col lg:flex-row xl:gap-[60px] md:gap-20 lg:h-[531px]"
         >
-          <div>
+          <div id="pioneers-left">
             <div class="flex gap-[32px] items-center">
               <img
+                id="ellipse-img"
                 class="w-[26px] h-[26px]"
                 src="src/images/Pioneer/Ellipse 213.png"
-                alt="Ellipse-img"
+                alt="ellipse-img"
               />
               <div class="flex h-[58px] items-center gap-8">
                 <h1 class="text-[48px] font-medium tracking-[-2%] text-nowrap">
@@ -303,7 +325,10 @@
               To solve problems for humans, it takes great humans.
             </h1>
           </div>
-          <div class="flex flex-col justify-end md:max-w-[715px]">
+          <div
+            id="pioneers-right"
+            class="flex flex-col justify-end md:max-w-[715px]"
+          >
             <p class="text-[32px] mt-[59px] tracking-[150%]">
               Building a <span class="text-[#DC470D]">greater future</span> is
               impossible without the right people on our team. If you’re a
@@ -316,6 +341,7 @@
             <div class="mt-[68px] self-end flex gap-[13px]">
               <div class="gradient-border">
                 <button
+                  id="investing-btn"
                   class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
                 >
                   <span
@@ -326,6 +352,7 @@
               </div>
               <div class="gradient-border">
                 <button
+                  id="careers-btn"
                   class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
                 >
                   <span
@@ -338,8 +365,10 @@
           </div>
         </div>
       </section>
+
       <section
-        class="px-5 py-20 lg:px-14 2xl:pt-[134px] 2xl:pr-[229px] 2xl:pb-[214px] 2xl:ps-[229px]"
+        id="investing-section"
+        class="hidden px-5 py-20 lg:px-14 2xl:pt-[134px] 2xl:pr-[229px] 2xl:pb-[214px] 2xl:ps-[229px]"
       >
         <div class="relative">
           <img
@@ -347,14 +376,17 @@
             src="src/images/form/Vector 135.png"
             alt="back-arrow"
           />
-          <h3 class="mb-[42px] underline underline-offset-8 text-[20px]">
+          <h3
+            class="mb-[42px] underline underline-offset-8 text-[20px] go-back cursor-pointer"
+          >
             Go back
           </h3>
         </div>
+
         <div
           class="flex flex-col lg:flex-row xl:gap-[60px] md:gap-20 lg:h-[531px]"
         >
-          <div class="mb-20 lg:mb-0">
+          <div class="left-container-form mb-20 lg:mb-0">
             <div>
               <div class="flex h-[58px] items-center gap-8">
                 <h1 class="text-[48px] font-medium tracking-[-2%] text-nowrap">
@@ -365,7 +397,10 @@
             <h1
               class="text-[48px] font-medium leading-tight tracking-[-2%] mt-[59px] xl:w-[687px]"
             >
-              We’re always open to connect with the right strategic partners.
+              We’re always
+              <span class="left-container-text"
+                >open to connect with the right strategic partners.</span
+              >
             </h1>
             <div class="flex gap-[13px] mt-[61px]">
               <button
@@ -376,6 +411,7 @@
 
               <div class="gradient-border">
                 <button
+                  id="inner-careers-btn"
                   class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
                 >
                   <span
@@ -419,8 +455,10 @@
           </form>
         </div>
       </section>
+
       <section
-        class="px-5 py-20 lg:px-14 2xl:pt-[134px] 2xl:pr-[229px] 2xl:pb-[214px] 2xl:ps-[229px]"
+        id="careers-section"
+        class="hidden px-5 py-20 lg:px-14 2xl:pt-[134px] 2xl:pr-[229px] 2xl:pb-[214px] 2xl:ps-[229px]"
       >
         <div class="relative">
           <img
@@ -428,14 +466,17 @@
             src="src/images/form/Vector 135.png"
             alt="back-arrow"
           />
-          <h3 class="mb-[42px] underline underline-offset-8 text-[20px]">
+          <h3
+            class="mb-[42px] underline underline-offset-8 text-[20px] go-back cursor-pointer"
+          >
             Go back
           </h3>
         </div>
+
         <div
           class="flex flex-col lg:flex-row xl:gap-[60px] md:gap-20 lg:h-[531px]"
         >
-          <div class="mb-20 lg:mb-0">
+          <div class="left-container-form mb-20 lg:mb-0">
             <div>
               <div class="flex h-[58px] items-center gap-8">
                 <h1 class="text-[48px] font-medium tracking-[-2%] text-nowrap">
@@ -446,13 +487,17 @@
             <h1
               class="text-[48px] font-medium leading-tight tracking-[-2%] mt-[59px] xl:w-[687px]"
             >
-              We’re always looking for <br />
-              the next Pioneer to <br />
-              join our team.
+              We’re always
+              <span class="left-container-text">
+                looking for <br class="hidden lg:block" />
+                the next Pioneer to <br />
+                join our team.
+              </span>
             </h1>
             <div class="flex gap-[13px] mt-[61px]">
               <div class="gradient-border">
                 <button
+                  id="inner-investing-btn"
                   class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
                 >
                   <span
@@ -501,12 +546,65 @@
           </form>
         </div>
       </section>
+      <footer
+        class="flex items-center p-5 justify-center xl:justify-start xl:ps-[361px] xl:pt-[59px]"
+      >
+        <div
+          class="w-full max-w-[866px] flex flex-col xl:gap-[195px] justify-between"
+        >
+          <div class="flex flex-col md:flex-row max-w-[866px] justify-between">
+            <div
+              class="md:order-2 text-[16px] w-[325px] flex flex-col gap-[24px] font-medium"
+            >
+              <a href="#home-section">
+                <h3>Home</h3>
+              </a>
+              <a href="#eva-pro-hero">
+                <h3>EVA Pro</h3>
+              </a>
+              <a href="#investing-section">
+                <h3 class="cursor-pointer" id="footer-investing">Investing</h3>
+              </a>
+              <a href="#careers-section">
+                <h3 class="cursor-pointer" id="footer-careers">Carrers</h3>
+              </a>
+            </div>
+            <div
+              class="w-full flex flex-col gap-[16px] mt-10 md:mt-0 items-start"
+            >
+              <img src="src/images/Footer/AHQ-OG 3.png" alt="logo" />
+              <div
+                class="flex gap-[8px] items-center justify-between w-[184px]"
+              >
+                <img src="src/images/Footer/facebook.png" alt="facebook-icon" />
+                <img src="src/images/Footer/in.png" alt="linkedin-icon" /><img
+                  src="src/images/Footer/youtube.png"
+                  alt="youtube-icon"
+                /><img
+                  src="src/images/Footer/instagram.png"
+                  alt="instagram-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row max-w-[866px] justify-between">
+            <div
+              class="md:order-2 flex flex-col md:flex-row gap-[24px] md:gap-[37px] text-[16px] font-medium"
+            >
+              <h3>Privacy Policy</h3>
+              <h3>Terms of Use</h3>
+            </div>
+            <h3 class="font-medium text-[11px]">Copyright © 2024 AutomateHQ</h3>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script src="src/javascript/navbar.js"></script>
     <script src="src/javascript/bubbleAnimations.js"></script>
     <script src="src/javascript/hero.js"></script>
     <script src="src/javascript/scrollAnimations.js"></script>
+    <script src="src/javascript/formSwitcher.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </body>

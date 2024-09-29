@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   anime({
     targets: speechBubble,
     width: "100%",
-    duration: 4000, // Reduced to match the new typing speed
+    duration: 4000,
     easing: "steps(40)",
     delay: 0,
   });
