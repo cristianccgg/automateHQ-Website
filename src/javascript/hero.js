@@ -1,6 +1,9 @@
 const images = document.querySelectorAll(".hero-image");
 const headings = document.querySelectorAll("h1");
+const h1sContainer = document.querySelector(".h1s-container");
 let currentIndex = 0;
+
+h1sContainer.style.opacity = "0";
 
 function showNextImage() {
   const currentImage = images[currentIndex];
@@ -10,7 +13,6 @@ function showNextImage() {
   currentImage.classList.add("prev");
   currentHeading.style.display = "none";
 
-  // Calculate the next index, wrapping around to 1 (not 0) when reaching the end
   const nextIndex = currentIndex === images.length - 1 ? 1 : currentIndex + 1;
   const nextImage = images[nextIndex];
   const nextHeading = headings[nextIndex];
@@ -18,7 +20,6 @@ function showNextImage() {
   nextImage.classList.add("active");
   nextHeading.style.display = "block";
 
-  // Hide the first image after it transitions out
   if (currentIndex === 0) {
     setTimeout(() => {
       currentImage.style.display = "none";
@@ -32,7 +33,6 @@ function showNextImage() {
   currentIndex = nextIndex;
 }
 
-// Initialize by showing only the first image and heading
 images[0].classList.add("active");
 headings[0].style.display = "block";
 
@@ -41,9 +41,12 @@ for (let i = 1; i < images.length; i++) {
   headings[i].style.display = "none";
 }
 
-// Start the animation after 3500ms for the first image
 setTimeout(() => {
   showNextImage();
-  // Then continue with 1500ms intervals for subsequent images
   setInterval(showNextImage, 1500);
 }, 3500);
+
+setTimeout(() => {
+  h1sContainer.style.opacity = "1";
+  h1sContainer.style.transition = "opacity 0.5s ease-in-out";
+}, 2000);

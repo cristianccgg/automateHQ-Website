@@ -18,72 +18,78 @@
   <body class="flex flex-col items-center">
     <main>
       <nav
-        class="w-full bg-white z-20 fixed flex items-center justify-between h-[112px]"
+        class="w-full bg-white z-20 fixed h-[112px] flex items-center justify-between"
       >
-        <img src="src/images/navbar/Group 1276.png" alt="logo" />
-        <div class="flex items-center flex-col md:flex-row">
-          <div id="menu-desktop" class="hidden items-center gap-[23px]">
-            <div class="gradient-border">
-              <button
-                class="w-[149px] h-[40px] relative border-gradient font-medium"
-              >
-                <a href="#eva-pro-hero">
-                  <span
-                    class="bg-gradient-to-r text-[20px] from-[#B839FF] to-[#3600D1] bg-clip-text text-transparent"
-                    >EVA Pro</span
-                  >
-                </a>
-              </button>
+        <div
+          class="px-5 xl:px-32 2xl:ps-[225px] 2xl:pe-[231px] flex items-center justify-between w-full"
+        >
+          <a href="#home-section"
+            ><img src="src/images/navbar/Group 1276.png" alt="logo"
+          /></a>
+          <div class="flex items-center flex-col md:flex-row">
+            <div id="menu-desktop" class="hidden items-center gap-[23px]">
+              <div class="gradient-border">
+                <button
+                  class="w-[149px] h-[40px] relative border-gradient font-medium"
+                >
+                  <a href="#eva-pro-hero">
+                    <span
+                      class="bg-gradient-to-r text-[20px] from-[#B839FF] to-[#3600D1] bg-clip-text text-transparent"
+                      >EVA Pro</span
+                    >
+                  </a>
+                </button>
+              </div>
+              <div class="gradient-border">
+                <button
+                  class="investing-navbar-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
+                >
+                  <a href="#investing-section">
+                    <span
+                      class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                      >Investing</span
+                    >
+                  </a>
+                </button>
+              </div>
+              <div class="gradient-border">
+                <button
+                  class="careers-navbar-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
+                >
+                  <a href="#careers-section">
+                    <span
+                      class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                      >Careers</span
+                    >
+                  </a>
+                </button>
+              </div>
+              <div class="gradient-border">
+                <button
+                  class="contact-navbar-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
+                >
+                  <a href="#careers-section">
+                    <span
+                      class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                      >Contact</span
+                    >
+                  </a>
+                </button>
+              </div>
             </div>
-            <div class="gradient-border">
-              <button
-                class="investing-navbar-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
-              >
-                <a href="#investing-section">
-                  <span
-                    class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-                    >Investing</span
-                  >
-                </a>
-              </button>
-            </div>
-            <div class="gradient-border">
-              <button
-                class="careers-navbar-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
-              >
-                <a href="#careers-section">
-                  <span
-                    class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-                    >Careers</span
-                  >
-                </a>
-              </button>
-            </div>
-            <div class="gradient-border">
-              <button
-                class="contact-navbar-btn w-[148px] h-[40px] relative border-gradient-1 font-medium"
-              >
-                <a href="#careers-section">
-                  <span
-                    class="bg-gradient-to-r text-[20px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
-                    >Contact</span
-                  >
-                </a>
-              </button>
-            </div>
+            <img
+              id="hambIcon"
+              src="src/images/navbar/hamb.png"
+              alt="hamb-icon"
+              class="cursor-pointer h-[20px] w-[26px]"
+            />
+            <img
+              id="closeIcon"
+              src="src/images/navbar/x.png"
+              alt="close-icon"
+              class="hidden cursor-pointer md:ms-[118px]"
+            />
           </div>
-          <img
-            id="hambIcon"
-            src="src/images/navbar/hamb.png"
-            alt="hamb-icon"
-            class="cursor-pointer h-[20px] w-[26px]"
-          />
-          <img
-            id="closeIcon"
-            src="src/images/navbar/x.png"
-            alt="close-icon"
-            class="hidden cursor-pointer md:ms-[118px]"
-          />
         </div>
 
         <!-- Menú Móvil -->
@@ -141,12 +147,15 @@
           </div>
         </div>
       </nav>
+
+      <!-- Hero -->
+
       <section
         id="home-section"
         class="md:pt-[227px] pt-52 px-5 lg:px-0 w-full flex flex-col items-center"
       >
         <div class="hero max-w-[1182px] w-full flex flex-col items-center">
-          <div class="text-[32px] self-start">
+          <div class="h1s-container text-[32px] self-start">
             <h1 class="h-[52px]"></h1>
             <h1
               class="border-2 px-4 border-black rounded-[35px] flex items-center justify-center"
@@ -207,8 +216,12 @@
             />
           </div>
           <div class="speech-bubble-container self-start">
-            <div class="speech-bubble px-[34px] h-[52px] ms-[16px] mt-[43px]">
-              <p class="text-[18px] md:text-[32px] typing-animation">
+            <div
+              class="speech-bubble px-[34px] h-[52px] md:ms-[16px] mt-[43px]"
+            >
+              <p
+                class="text-[12px] sm:text-[18px] md:text-[32px] typing-animation"
+              >
                 We're building the future through
               </p>
             </div>
@@ -222,15 +235,17 @@
         <img src="src/images/pole/Urban-Wall-Poster 1.png" alt="pole-img" />
       </section>
       <section
-        class="w-full px-5 md:px-[100px] md:py-[100px] xl:px-[229px] xl:pb-[207px] xl:pt-[206px] pt-20 pb-20"
+        class="w-full px-5 lg:px-14 md:py-[100px] 2xl:px-[229px] 2xl:pb-[207px] 2xl:pt-[206px] pt-20 pb-20"
       >
         <div class="max-w-[1462px] element">
           <h1 class="text-[48px] font-medium">Our Mission</h1>
           <div
             class="mt-[59px] w-full font-medium flex flex-col lg:flex-row gap-[80px]"
           >
-            <h1 class="text-[48px] max-w-[667px] w-full xl:text-nowrap">
-              Innovating today for a smarter <br />
+            <h1
+              class="text-[48px] max-w-[667px] w-full text-wrap 2xl:text-nowrap"
+            >
+              Innovating today for a smarter <br class="hidden 2xl:block" />
               tomorrow.
             </h1>
             <p class="text-[32px] w-full leading-[150%]">
@@ -255,18 +270,18 @@
           class="flex flex-col lg:flex-row xl:gap-[188px] md:gap-20 lg:h-[477px]"
         >
           <div class="education">
-            <div class="flex h-[58px] items-center gap-8">
+            <div class="flex h-[58px] items-center gap-8 w-fit">
               <h1 class="text-[48px] font-medium tracking-[-2%] text-nowrap">
                 EVA Pro
               </h1>
               <h2
-                class="bg-purple-custom text-white text-[32px] h-[52px] font-medium rounded-full w-[224px] text-center"
+                class="bg-purple-custom text-white flex items-center justify-center text-[18px] sm:text-[32px] h-[52px] font-medium rounded-full sm:w-[224px] w-[130px] text-center"
               >
                 Education
               </h2>
             </div>
             <h1
-              class="text-[48px] font-medium tracking-[-2%] mt-[59px] lg:max-w-[559px]"
+              class="text-[48px] font-medium tracking-[-2%] mt-[59px] lg:max-w-[559px] text-wrap"
             >
               Our flagship solution to solving B2B education challenges, today.
             </h1>
@@ -280,10 +295,10 @@
             </p>
             <div class="gradient-border mt-[68px] self-end">
               <h2
-                class="relative border-gradient h-[52px] w-[341px] font-medium text-center"
+                class="relative flex flex-col justify-center border-gradient font-medium h-[52px] w-[280px] sm:w-[341px] text-center"
               >
                 <span
-                  class="bg-gradient-to-r text-[32px] from-[#B839FF] to-[#3600D1] bg-clip-text text-transparent"
+                  class="bg-gradient-to-r items-center text-[20px] sm:text-[32px] from-[#B839FF] to-[#3600D1] font-medium bg-clip-text text-transparent"
                   >I want to learn more</span
                 >
               </h2>
@@ -314,13 +329,15 @@
                 alt="ellipse-img"
               />
               <div class="flex h-[58px] items-center gap-8">
-                <h1 class="text-[48px] font-medium tracking-[-2%] text-nowrap">
+                <h1
+                  class="text-[48px] font-medium tracking-[-2%] xl:text-nowrap"
+                >
                   Calling all Pioneers
                 </h1>
               </div>
             </div>
             <h1
-              class="text-[48px] ms-[58px] leading-tight font-medium tracking-[-2%] mt-[59px] xl:w-[687px]"
+              class="text-[48px] ms-[58px] leading-tight font-medium text-wrap tracking-[-2%] mt-[59px] 2xl:w-[687px]"
             >
               To solve problems for humans, it takes great humans.
             </h1>
@@ -338,14 +355,14 @@
                 >Together, we can change the world.</span
               >
             </p>
-            <div class="mt-[68px] self-end flex gap-[13px]">
+            <div class="mt-[68px] self-end flex flex-wrap gap-[13px]">
               <div class="gradient-border">
                 <button
                   id="investing-btn"
-                  class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
+                  class="sm:w-[191px] w-[120px] h-[52px] relative border-gradient-1 font-medium"
                 >
                   <span
-                    class="bg-gradient-to-r text-center flex justify-center items-center text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                    class="bg-gradient-to-r text-center font-medium flex justify-center items-center text-[18px] sm:text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
                     >Investing</span
                   >
                 </button>
@@ -353,10 +370,10 @@
               <div class="gradient-border">
                 <button
                   id="careers-btn"
-                  class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
+                  class="sm:w-[191px] w-[120px] h-[52px] relative border-gradient-1 font-medium"
                 >
                   <span
-                    class="bg-gradient-to-r text-center flex justify-center items-center text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                    class="bg-gradient-to-r font-medium text-center flex justify-center items-center text-[18px] sm:text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
                     >Careers</span
                   >
                 </button>
@@ -389,7 +406,9 @@
           <div class="left-container-form mb-20 lg:mb-0">
             <div>
               <div class="flex h-[58px] items-center gap-8">
-                <h1 class="text-[48px] font-medium tracking-[-2%] text-nowrap">
+                <h1
+                  class="text-[48px] font-medium tracking-[-2%] md:text-nowrap"
+                >
                   Let's get in touch
                 </h1>
               </div>
@@ -404,7 +423,7 @@
             </h1>
             <div class="flex gap-[13px] mt-[61px]">
               <button
-                class="w-[191px] h-[52px] bg-custom-gradient text-white rounded-full text-[32px]"
+                class="sm:w-[191px] w-[120px] h-[52px] bg-custom-gradient text-white rounded-full text-[18px] sm:text-[32px]"
               >
                 Investing
               </button>
@@ -412,10 +431,10 @@
               <div class="gradient-border">
                 <button
                   id="inner-careers-btn"
-                  class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
+                  class="sm:w-[191px] w-[120px] h-[52px] relative border-gradient-1 font-medium"
                 >
                   <span
-                    class="bg-gradient-to-r text-center flex justify-center items-center text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                    class="bg-gradient-to-r text-center flex justify-center items-center text-[18px] sm:text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
                     >Careers</span
                   >
                 </button>
@@ -479,7 +498,9 @@
           <div class="left-container-form mb-20 lg:mb-0">
             <div>
               <div class="flex h-[58px] items-center gap-8">
-                <h1 class="text-[48px] font-medium tracking-[-2%] text-nowrap">
+                <h1
+                  class="text-[48px] font-medium tracking-[-2%] md:text-nowrap"
+                >
                   Let's get in touch
                 </h1>
               </div>
@@ -498,16 +519,16 @@
               <div class="gradient-border">
                 <button
                   id="inner-investing-btn"
-                  class="w-[191px] h-[52px] relative border-gradient-1 font-medium"
+                  class="sm:w-[191px] w-[120px] h-[52px] relative border-gradient-1 font-medium"
                 >
                   <span
-                    class="bg-gradient-to-r text-center flex justify-center items-center text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
+                    class="bg-gradient-to-r text-center flex justify-center items-center text-[18px] sm:text-[32px] from-[#BE0800] to-[#DC470D] bg-clip-text text-transparent"
                     >Investing</span
                   >
                 </button>
               </div>
               <button
-                class="w-[191px] h-[52px] bg-custom-gradient text-white rounded-full text-[32px]"
+                class="sm:w-[191px] w-[120px] h-[52px] bg-custom-gradient text-white rounded-full text-[18px] sm:text-[32px]"
               >
                 Careers
               </button>
@@ -572,7 +593,12 @@
             <div
               class="w-full flex flex-col gap-[16px] mt-10 md:mt-0 items-start"
             >
-              <img src="src/images/Footer/AHQ-OG 3.png" alt="logo" />
+              <a href="#home-section"
+                ><img
+                  class="block"
+                  src="src/images/Footer/AHQ-OG 3.png"
+                  alt="logo"
+              /></a>
               <div
                 class="flex gap-[8px] items-center justify-between w-[184px]"
               >
@@ -589,7 +615,7 @@
           </div>
           <div class="flex flex-col md:flex-row max-w-[866px] justify-between">
             <div
-              class="md:order-2 flex flex-col md:flex-row gap-[24px] md:gap-[37px] text-[16px] font-medium"
+              class="md:order-2 my-[24px] md:my-0 flex flex-row gap-[24px] md:gap-[37px] text-[16px] font-medium"
             >
               <h3>Privacy Policy</h3>
               <h3>Terms of Use</h3>

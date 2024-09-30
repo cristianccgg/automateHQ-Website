@@ -6,6 +6,10 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+.h1s-container {
+  opacity: 0;
+}
+
 .border-gradient {
   position: relative;
   z-index: 0;

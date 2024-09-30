@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
     sectionToShow.classList.remove("hidden");
 
     anime({
-      targets: sectionToShow.querySelectorAll(".left-container-form"),
+      targets: sectionToShow.querySelectorAll(
+        ".left-container-form, .left-container-text"
+      ),
       translateX: [-100, 0],
       opacity: [0, 1],
       duration: 300,

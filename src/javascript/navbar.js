@@ -33,12 +33,10 @@ closeIcon.addEventListener("click", () => {
   closeIcon.classList.add("hidden");
 });
 
-// Escucha el evento de redimensionamiento de la ventana
 window.addEventListener("resize", () => {
   if (isMobileView()) {
     menuDesktop.classList.add("hidden");
   } else {
-    // Si está en vista de escritorio y el menú está visible, ocúltalo
     if (!menuDesktop.classList.contains("hidden")) {
       menuDesktop.classList.add("hidden");
     }
