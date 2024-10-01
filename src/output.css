@@ -1650,7 +1650,6 @@ body {
 
 .element {
   opacity: 0;
-  /* Comienza oculto */
 }
 
 @media (min-width: 640px) {

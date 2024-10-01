@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const h1sContainer = document.querySelector(".h1s-container");
   let currentIndex = 0;
 
-  // Inicialmente oculta el contenedor
   h1sContainer.style.opacity = "0";
 
   function showNextImage() {
@@ -35,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
     currentIndex = nextIndex;
   }
 
-  // Inicializa mostrando solo el primer heading e imagen
   images[0].classList.add("active");
   headings[0].style.display = "block";
 
@@ -44,13 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
     headings[i].style.display = "none";
   }
 
-  // Inicia la animación después de 3500ms
   setTimeout(() => {
     showNextImage();
     setInterval(showNextImage, 1500);
   }, 3500);
 
-  // Transición para mostrar el contenedor después de 2000ms
   setTimeout(() => {
     h1sContainer.style.opacity = "1";
     h1sContainer.style.transition = "opacity 0.5s ease-in-out";
