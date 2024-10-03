@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           alert("Message successfully sent! We will be in touch shortly.");
+
+          // Reinicia el formulario
+          form.reset();
         },
         (error) => {
           console.log("FAILED...", error);
