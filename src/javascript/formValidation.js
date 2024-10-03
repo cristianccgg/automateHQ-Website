@@ -1,5 +1,5 @@
 (function () {
-  emailjs.init("mGDUnoM3sWAx7labJ");
+  emailjs.init("f9pElmO206g1b6Acq");
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       // Envía el correo
-      emailjs.send("service_tk7wuzg", "template_ddwjt0w", data).then(
+      emailjs.send("service_gfydntr", "template_f6m1d3h", data).then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           alert("Message successfully sent! We will be in touch shortly.");
