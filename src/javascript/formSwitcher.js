@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const pioneersSection = document.getElementById("pioneers-section");
   const investingSection = document.getElementById("investing-section");
   const careersSection = document.getElementById("careers-section");
+  const contactSection = document.getElementById("contact-section");
   const investingBtn = document.getElementById("investing-btn");
   const careersBtn = document.getElementById("careers-btn");
   const innerInvestingBtn = document.getElementById("inner-investing-btn");
@@ -9,11 +10,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const ellipse = document.getElementById("ellipse-img");
   const footerInvestingBtn = document.getElementById("footer-investing");
   const footerCareersBtn = document.getElementById("footer-careers");
+  const contactInnerInvestingBtn = document.getElementById(
+    "inner-investing-btn-contact"
+  );
+  const contactInnerCareersBtn = document.getElementById(
+    "inner-careers-btn-contact"
+  );
 
   function showSectionFromPioneers(sectionToShow) {
     pioneersSection.classList.add("hidden");
     investingSection.classList.add("hidden");
     careersSection.classList.add("hidden");
+    contactSection.classList.add("hidden");
     sectionToShow.classList.remove("hidden");
 
     anime({
@@ -57,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function showPioneersSection() {
     investingSection.classList.add("hidden");
     careersSection.classList.add("hidden");
+    contactSection.classList.add("hidden");
     pioneersSection.classList.remove("hidden");
 
     anime({
@@ -105,6 +114,13 @@ document.addEventListener("DOMContentLoaded", () => {
     switchInnerSection(careersSection, investingSection)
   );
 
+  contactInnerInvestingBtn.addEventListener("click", () =>
+    switchInnerSection(investingSection, careersSection)
+  );
+  contactInnerCareersBtn.addEventListener("click", () =>
+    switchInnerSection(careersSection, investingSection)
+  );
+
   document.querySelectorAll(".go-back").forEach((btn) => {
     btn.addEventListener("click", showPioneersSection);
   });
@@ -118,13 +134,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document
-    .querySelectorAll(".careers-navbar-btn, .contact-navbar-btn")
-    .forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        setTimeout(() => {
-          showSectionFromPioneers(careersSection);
-        }, 100);
-      });
+  document.querySelectorAll(".careers-navbar-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      setTimeout(() => {
+        showSectionFromPioneers(careersSection);
+      }, 100);
     });
+  });
+
+  document.querySelectorAll(".contact-navbar-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      setTimeout(() => {
+        showSectionFromPioneers(contactSection);
+      }, 100);
+    });
+  });
+
+  document.querySelectorAll(".home-nav-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      setTimeout(() => {
+        showPioneersSection();
+      }, 100);
+    });
+  });
 });

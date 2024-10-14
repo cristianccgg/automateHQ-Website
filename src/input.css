@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  font-family: "manrope", sans-serif !important;
 }
 
 .h1s-container {
@@ -92,7 +96,8 @@ body {
   display: inline-block;
   overflow: hidden;
   border-right: 3px solid white;
-  font-family: monospace;
+  font-family: "manrope", sans-serif;
+  font-weight: 500;
   animation: typing 1s steps(40, start), blink-caret 0.75s step-end infinite;
   animation-fill-mode: forwards;
 }
