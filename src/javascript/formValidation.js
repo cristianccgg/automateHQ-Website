@@ -17,13 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
         message: formData.get("message"),
       };
 
-      // Envía el correo
       emailjs.send("service_gfydntr", "template_f6m1d3h", data).then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           alert("Message successfully sent! We will be in touch shortly.");
 
-          // Reinicia el formulario
           form.reset();
         },
         (error) => {
